@@ -30,7 +30,7 @@ class FlaskAppTests(unittest.TestCase):
         r = self.app.post('/api',
                           content_type='application/json',
                           data=json.dumps({'name': 'Den'}))
-        self.assertEqual(r.json, {'status': 'OK'})
+        self.assertEqual(r.json, {'status': 'OKe'})
         self.assertEqual(r.status_code, 200)
 
     def test_not_dict_post_api_endpoint(self):
